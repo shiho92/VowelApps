@@ -25,8 +25,10 @@ EditorBuildSettings:
     path: Assets/pageO.unity
   - enabled: 1
     path: Assets/pageU.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/activities.unity
+  - enabled: 1
+    path: Assets/act1.unity
   - enabled: 1
     path: Assets/actA.unity
   - enabled: 1
