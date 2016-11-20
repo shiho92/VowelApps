@@ -7,7 +7,8 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	Vector3 startPosition;
 	Transform startParent, targetObject;
 	Vector3 mouseposition, targetposition;
-	float distance = 380.0f;
+	//float distance = 380.0f;
+	float distance = 100.0f;
 
 	#region IBeginDragHandler implementation
 
