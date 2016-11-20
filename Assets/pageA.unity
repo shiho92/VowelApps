@@ -90,72 +90,6 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &30181691
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 367827580}
-    m_Modifications:
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -89
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -170
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -897
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0032034088
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.99987
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.0126412
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.009489674
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 500.0003
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 437.30566
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 9077c3fcfe67c0d43894a0929da28b68, type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-  m_IsPrefabParent: 0
---- !u!4 &30181693 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: 541c41afd2136474ea18ce3886375ee8, type: 3}
-  m_PrefabInternal: {fileID: 30181691}
 --- !u!1 &291009016
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +260,6 @@ RectTransform:
   - {fileID: 647510440}
   - {fileID: 649191882}
   - {fileID: 685410157}
-  - {fileID: 30181693}
   - {fileID: 619229628}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1001,7 +934,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf2522aed0343dc4db565db7f3b5b13a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf2522aed0343dc4db565db7f3b5b13a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1018,6 +951,10 @@ Prefab:
     - target: {fileID: 400000, guid: cf2522aed0343dc4db565db7f3b5b13a, type: 3}
       propertyPath: m_LocalScale.y
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cf2522aed0343dc4db565db7f3b5b13a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf2522aed0343dc4db565db7f3b5b13a, type: 3}
@@ -1300,11 +1237,11 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1653193268}
-        m_MethodName: Play
-        m_Mode: 1
+        m_MethodName: PlayOneShot
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
